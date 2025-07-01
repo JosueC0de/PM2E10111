@@ -14,11 +14,11 @@ Karla Daniella Ventura Garcia - 123300011
 La aplicacion para el usuario final tiene las siguientes funcionalidades:
 
 Guardar contactos
-permite seleccionar areas determinadas.
-almacena la imagen del contacto.
-buscador en la agenda de contactos.
-Edicion de contacto almacenado
-Eliminacion del contacto almacenado.
-permite visualizar la imagen del contacto.
-se puede compartir el contacto a otras plataformas.
-permite llamar directamente al contacto agendado.
+1. permite seleccionar areas determinadas.
+2. almacena la imagen del contacto.
+3. buscador en la agenda de contactos.
+4. Edicion de contacto almacenado
+5. Eliminacion del contacto almacenado.
+6. permite visualizar la imagen del contacto.
+7. se puede compartir el contacto a otras plataformas.
+8. permite llamar directamente al contacto agendado.
