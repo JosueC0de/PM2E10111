@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8D5CF"
+    android:padding="24dp"
+    tools:context=".ActivityRegistros">
+
+
+
+    <Button
+        android:id="@+id/atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#05566F"
+        android:text="Atrás"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <SearchView
+        android:id="@+id/buscar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/rounded_edittext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atras" />
+
+
+    <ListView
+        android:id="@+id/contactos"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="5dp"
+        android:listSelector="@android:color/holo_blue_light"
+        android:background="@drawable/rounded_edittext"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buscar" />
+
+
+    <Button
+        android:id="@+id/compartir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#05566F"
+        android:text="Compartir Contacto"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/verImagen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactos" />
+
+
+    <Button
+        android:id="@+id/verImagen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:text="Ver imagen"
+        android:backgroundTint="#05566F"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/compartir"
+        app:layout_constraintTop_toBottomOf="@+id/contactos" />
+
+
+    <Button
+        android:id="@+id/eliminar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#05566F"
+        android:text="Eliminar contacto"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/actualizar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/compartir" />
+
+
+    <Button
+        android:id="@+id/actualizar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#05566F"
+        android:text="Actualizar contacto"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/eliminar"
+        app:layout_constraintTop_toBottomOf="@+id/verImagen" />
+
+
+    <Button
+        android:id="@+id/llamar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#03A9DE"
+        android:text="Llamar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/actualizar" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Contactos Guardados"
+        android:textColor="#05566F"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/atras"
+        app:layout_constraintStart_toEndOf="@id/atras"
+        app:layout_constraintTop_toTopOf="@id/atras" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
